@@ -15,7 +15,7 @@ class Shoe
   end
   
   def unique_brands
-    if brands_arr.none { |i| i == brand} 
+    if brands_arr.none? { |i| i == brand} 
       @brands_arr << brand
       BRANDS << @brands_arr
     end
