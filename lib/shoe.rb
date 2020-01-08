@@ -13,8 +13,7 @@ class Shoe
   end
   
   def brands(brand)
-    if BRANDS.include?( do |i|
-      if  i != brand
-      BRANDS << 
-
+    if BRANDS.!include?(brand)
+      BRANDS << brand 
+end
 end
