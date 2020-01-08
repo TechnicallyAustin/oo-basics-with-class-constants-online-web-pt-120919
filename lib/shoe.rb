@@ -6,6 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    BRANDS << brand 
   end
       
 
@@ -14,12 +15,5 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
   
-  def unique_brands
-    if brands_arr.none? { |i| i == brand} 
-      @brands_arr << brand
-      BRANDS << @brands_arr
-    end
-    
-end
 
 end
