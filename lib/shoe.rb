@@ -16,5 +16,5 @@ class Shoe
   def brands
     
 end
-end
+
 end
