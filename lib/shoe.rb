@@ -19,5 +19,6 @@ class Shoe
     if @brands_arr.!include?(@brand)
       BRANDS << @brands_arr
     end
+  end
 
 end
