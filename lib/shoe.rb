@@ -6,6 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    @brands_arr = []
   end
       
 
@@ -15,7 +16,7 @@ class Shoe
   end
   
   def unique_brands
-    if BRANDS.!include?(self.brand)
+    unless @brands_arr.include?(self.brand)
       BRANDS << brand
     end
   end
