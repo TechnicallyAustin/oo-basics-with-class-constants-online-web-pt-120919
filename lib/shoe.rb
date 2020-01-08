@@ -13,8 +13,8 @@ class Shoe
   end
   
   def brands(brand)
-    if BRANDS.none? do
-      |i| i != brand}
+    if BRANDS.i do |i|
+      if  i != brand
       BRANDS << 
 
 end
