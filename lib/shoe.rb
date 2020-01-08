@@ -2,11 +2,10 @@ class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
   BRANDS = []
+  @brands_arr = []
 
   def initialize(brand)
     @brand = brand
-    if BRANDS.none { |i| i == brand} 
-    BRANDS << brand 
   end
       
   end
@@ -16,7 +15,11 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
   
-  def brands
+  def unique_brands
+    if brands_arr.none { |i| i == brand} 
+      @brands_arr << brand
+      BRANDS << @brands_arr
+    end
     
 end
 
